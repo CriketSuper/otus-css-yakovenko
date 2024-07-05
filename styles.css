@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    min-height: 135px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header * {
+    vertical-align: middle;
+}
+
+nav {
+    float: right;
+    line-height: 135px;
+}
+
+.nav-ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-left: 50px;
+}
+
+.first-section {
+    display: inline-block;
+    width: 100%;
+    background-image: url("img/inside-weather.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.first-section-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    width: 50%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.first-section-section-h1 {
+    margin: 0;
+    padding-bottom: 14px;
+}
