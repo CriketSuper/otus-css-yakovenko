@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"),
+    local("PlayfairDisplay-VariableFont_wght"),
+    url(fonts/playfair-display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: local("Bitter"),
+  local("Bitter-VariableFont_wght"),
+  url(fonts/bitter/Bitter-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    local("Roboto-Medium"),
+    url(fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    local("Roboto-Regular"),
+    url(fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    local("Roboto-Bold"),
+    url(fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    local("Roboto-Black"),
+    url(fonts/roboto/Roboto-Black.ttf);
+}
+
+.body {
+    font-family: "Roboto", sans-serif;
+}
+
+.bitter-regular {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.playfair-display-medium {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-size: 86px;
+    font-weight: 500;
+    font-optical-sizing: auto;
+}
+
+.playfair-display-semibold {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 86px;
+  font-weight: 600;
+  font-stretch: 120%;
+  font-optical-sizing: auto;
+}
+
+.stretch-120 {
+    font-stretch: 120%;
+  }
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+}
+
+
+.fnt-size-20 {
+  font-size: 20px;
+}
+
+.fnt-size-18 {
+  font-size: 18px;
+}
+
+.fnt-size-16 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
