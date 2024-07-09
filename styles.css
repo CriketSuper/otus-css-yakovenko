@@ -3,15 +3,21 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* tablet */
 @media only screen and (max-width: 1200px) {
-    header {
-        width: 1200px;
-    }
-
     body {
         width: 1200px;
     }
+}
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
 }
 
 header {
