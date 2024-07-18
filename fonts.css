@@ -1,3 +1,39 @@
+/* pc */
+@media only screen and (min-width: 1200px) {
+  .playfair-display-medium {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-size: 86px;
+    font-weight: 500;
+    font-optical-sizing: auto;
+  }
+
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width: 1200px) {
+  .playfair-display-medium {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 500;
+    font-optical-sizing: auto;
+  }
+
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+  }
+}
+
 @font-face {
   font-family: "Playfair Display";
   src: local("Playfair Display"),
@@ -52,13 +88,6 @@
   font-size: 26px;
 }
 
-.playfair-display-medium {
-    font-family: "Playfair Display", serif;
-    font-style: normal;
-    font-size: 86px;
-    font-weight: 500;
-    font-optical-sizing: auto;
-}
 
 .playfair-display-semibold {
   font-family: "Playfair Display", serif;
@@ -73,12 +102,7 @@
     font-stretch: 120%;
   }
 
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 24px;
-}
+
 
 .roboto-regular {
   font-family: "Roboto", sans-serif;
