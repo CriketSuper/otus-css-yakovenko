@@ -33,12 +33,17 @@ ul {
     padding-left: 45px;
 }
 
-body {
-
+footer {
+    background-color: black;
+    display: flex;
+    padding: 70px 20px 70px 20px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
 }
 
-footer {
-
+footer address * {
+    color: white;
 }
 
 a {
@@ -148,6 +153,7 @@ a {
     grid-template-columns: repeat(12, 8.33%);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    margin-bottom: 150px;
 }
 
 .testimonials-div-link {
@@ -189,6 +195,59 @@ a {
     gap: 42px;
 }
 
-#strong-points {
+#strong-points h2{
+    margin-bottom: 30px;
+    margin-left: 233px;
+}
 
+#strong-points .scroll {
+    display: grid;
+    grid-template-columns: repeat(19, 8.33%);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    margin-bottom: 150px;
+    overflow: scroll;
+}
+
+.strong-points-scroll-img-first {
+    grid-column: 1/4;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.strong-points-scroll-img-second {
+    grid-column: 4/7;
+    width: 100%;
+    height: 100%;
+}
+
+.strong-points-scroll-section {
+    grid-column: 7/11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+}
+
+.strong-points-scroll-img-third {
+    grid-column: 11/14;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.strong-points-scroll-img-fourth {
+    grid-column: 14/17;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.strong-points-scroll-img-fifth {
+    grid-column: 17/20;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
