@@ -1,2 +1,6 @@
 # otus-css-yakovenko
-# Hello!
+# autor: Yakovenko Evgenii
+# age: 22
+
+# Project-name: Mod Studio
+# All Deployed
