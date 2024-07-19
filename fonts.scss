@@ -1,0 +1,130 @@
+@mixin font ($ff, $fs, $fsz, $fw) {
+    font-family: #{$ff};
+    font-style: $fs;
+    font-size: $fsz;
+    font-weight: $fw;
+}
+
+/* pc */
+@media only screen and (min-width: 1200px) {
+    .playfair-display-medium {
+        @include font ("Playfair Display, serif", normal, 86px, 500);
+        font-optical-sizing: auto;
+    }
+  
+    .roboto-medium {
+        @include font ("Roboto, sans-serif", normal, 24px, 500);
+    }
+  }
+  
+  /* tablet */
+  @media only screen and (max-width: 1200px) {
+    .playfair-display-medium {
+        @include font ("Playfair Display, serif", normal, 72px, 500);
+        font-optical-sizing: auto;
+    }
+  
+    .roboto-medium {
+        @include font ("Roboto, sans-serif", normal, 20px, 500);
+    }
+  }
+  
+  @font-face {
+    font-family: "Playfair Display";
+    src: local("Playfair Display"),
+      local("PlayfairDisplay-VariableFont_wght"),
+      url(fonts/playfair-display/PlayfairDisplay-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: "Bitter";
+    src: local("Bitter"),
+    local("Bitter-VariableFont_wght"),
+    url(fonts/bitter/Bitter-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      local("Roboto-Medium"),
+      url(fonts/roboto/Roboto-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      local("Roboto-Regular"),
+      url(fonts/roboto/Roboto-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      local("Roboto-Bold"),
+      url(fonts/roboto/Roboto-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      local("Roboto-Black"),
+      url(fonts/roboto/Roboto-Black.ttf);
+  }
+  
+  .body {
+      font-family: "Roboto", sans-serif;
+  }
+  
+  .bitter-regular {
+    @include font ("Bitter, serif", normal, 26px, 400);
+    font-optical-sizing: auto;
+  }
+  
+  
+  .playfair-display-semibold {
+    @include font ("Playfair Display, serif", normal, 86px, 600);
+    font-stretch: 120%;
+    font-optical-sizing: auto;
+  }
+  
+  .stretch-120 {
+      font-stretch: 120%;
+    }
+  
+  .roboto-regular {
+    @include font ("Roboto, sans-serif", normal, 16px, 400);
+  }
+  
+  .roboto-bold {
+    @include font ("Roboto, sans-serif", normal, 24px, 700);
+  }
+  
+  .roboto-black {
+    @include font ("Roboto, sans-serif", normal, 24px, 900);
+  }
+  
+  .fnt-size-64 {
+    font-size: 64px;
+  }
+  
+  .fnt-size-40 {
+    font-size: 40px;
+  }
+  
+  .fnt-size-30 {
+    font-size: 30px;
+  }
+  
+  .fnt-size-20 {
+    font-size: 20px;
+  }
+  
+  .fnt-size-18 {
+    font-size: 18px;
+  }
+  
+  .fnt-size-16 {
+    font-size: 16px;
+  }
+  
+  

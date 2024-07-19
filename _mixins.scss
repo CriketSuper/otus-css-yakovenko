@@ -1,0 +1,24 @@
+@mixin grid_col_row ($col, $row) {
+    grid-column: #{$col};
+    grid-row: #{$row};
+}
+
+@mixin grid ($col, $colw, $row, $rowh) {
+    display: grid;
+    grid-template-columns: repeat(#{$col}, #{$colw});
+    grid-template-rows: repeat(#{$row}, #{$rowh});
+}
+
+@mixin strong-points_scroll_img ($gc) {
+    grid-column: #{$gc};
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin mobile_footer_element ($ord, $alg) {
+    order: #{$ord};
+    align-self: #{$alg};
+}
+
+
