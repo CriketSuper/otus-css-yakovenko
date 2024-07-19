@@ -123,6 +123,17 @@
   font-size: 24px;
 }
 
+.fnt-size-64 {
+  font-size: 64px;
+}
+
+.fnt-size-40 {
+  font-size: 40px;
+}
+
+.fnt-size-30 {
+  font-size: 30px;
+}
 
 .fnt-size-20 {
   font-size: 20px;
@@ -135,3 +146,4 @@
 .fnt-size-16 {
   font-size: 16px;
 }
+

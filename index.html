@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="basic-header">
         <span class="playfair-display-semibold">Mod</span>
         <nav>
             <ul class="roboto-medium nav-ul">
@@ -25,6 +25,11 @@
     </header>
 
     <!-- main -->
+    <section class="first-section-mobile">
+        <h1 class="playfair-display-medium stretch-120 first-section-section-h1">Mod studio</h1>
+        <span class="roboto-medium fnt-size-20">Modern Web Studio</span>
+    </section>
+
     <section class="first-section">
         <section class="first-section-section">
             <div>
@@ -34,6 +39,7 @@
         </section>
     </section>
 
+    
     <!-- Biography -->
     <section id="biography">
 
@@ -48,12 +54,12 @@
                 Katya<br>
                 Mills
             </span>
-            <br>
             <p class="roboto-medium fnt-size-18">
                 Art Director
                 <br>
                 Scenography / Styling / Creative Photography / Design
             </p>
+
             <div>
                 <figure class="biography-div-rectangle"></figure>
             </div>
@@ -66,6 +72,36 @@
                 </blockquote>
             </div>
         </div>
+    </section>
+
+    <section id="biography-mobile">
+        <div class="biography-mobile-information">
+            <p class="roboto-medium fnt-size-18">Art Director</p>
+            <ul class="roboto-medium fnt-size-18 biography-mobile-p-ul">
+                <li>- Scenography</li>
+                <li>- Styling</li>
+                <li>- Creative Photography</li>
+                <li>- Design</li>
+            </ul>
+        </div>
+
+        <h2 class="roboto-bold fnt-size-18 biography-mobile-h2">Biography</h2>
+        
+        <blockquote class="bitter-regular fnt-size-30 biography-mobile-blockquote">
+            "The more i deal with<br> 
+            the work as something that is<br>
+            my own,<br>
+            as something that<br> 
+            is personal, the more<br> 
+            successful it is."
+        </blockquote>
+
+        <span class="playfair-display-medium fnt-size-64 biography-mobile-span">
+            -Katya Mills
+        </span>
+
+        <img class="biography-mobile-img" src="img/jared-weiss-P3cB0ynqYBw-unsplash 1.jpg" alt="Biography">
+
     </section>
 
     <!-- Designers -->
@@ -171,6 +207,37 @@
         </div>
     </section>
 
+    <section id="testimonials-mobile">
+        <h2 class="roboto-bold fnt-size-18">Testimonials</h2>
+        <blockquote class="bitter-regular fnt-size-30">
+            I just really want to do<br>
+            good work and work<br> 
+            with some great people,<br> 
+            people who challenge<br>
+            me.
+        </blockquote>
+
+        <img src="img/sinitta-leunen-YaReHIzNdRw-unsplash 1.png" alt="Testimonials">
+        <div class="testimonials-mobile-div">
+            <div>
+                <span class="roboto-bold">Website</span>
+                <br>
+                <a class="roboto-regular" href="www.whitepapers.com">www.whitepapers.com</a>
+            </div>
+            <div>
+                <span class="roboto-bold">Creativity</span>
+                <br>
+                <a class="roboto-regular" href="www.whitepapers.com">www.whitepapers.com</a>
+            </div>
+            <div>
+                <span class="roboto-bold">Creativity</span>
+                <br>
+                <a class="roboto-regular" href="www.whitepapers.com">www.whitepapers.com</a>
+            </div>
+        </div>
+    
+    </section>
+
     <!-- Strong points -->
     <section id="strong-points">
         <h2 class="roboto-bold">Strong points</h2>
@@ -181,8 +248,8 @@
 
             <section class="strong-points-scroll-section">
                 
-                <span class="playfair-display-medium">Strength</span>
-                <ul class="bitter-regular">
+                <span class="playfair-display-medium strong-points-scroll-section-span">Strength</span>
+                <ul class="bitter-regular strong-points-scroll-section-ul">
                     <li>Interiors</li>
                     <li>Outdoors</li>
                     <li>Portraits</li>
@@ -201,16 +268,27 @@
         </section>
     </section>
 
+    <header class="mobile-header">
+        <nav>
+            <ul class="bitter-regular fnt-size-40 nav-ul">
+                <li><a href="#biography-mobile">B</a></li>
+                <li><a href="#designers">D</a></li>
+                <li><a href="#testimonials-mobile">T</a></li>
+                <li><a href="#strong-points"><b><u>S</u></b></a></li>
+            </ul>
+        </nav>
+    </header>
+
     <footer>
-        <address class="roboto-regular">
+        <address class="roboto-regular footer-address">
             <u><a href="tel:+79211234567">+7 921 123-45-67</a></u><br>
             <u><a href="mailto:info@modstudio.com">INFO@MODSTUDIO.COM</a></u>
         </address>
-        <div>
+        <div class="footer-div">
             <span class="roboto-medium fnt-size-18">A product of</span> <b class="roboto-black">MOD</b>
         </div>
 
-        <div class="roboto-regular">
+        <div class="roboto-regular footer-div-second">
             © 2023 Mod Media. All rights reserved
         </div>
     </footer>
