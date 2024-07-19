@@ -96,7 +96,7 @@
   }
   
   .roboto-bold {
-    @include font ("Roboto, sans-serif", normal, 24px, 700);
+    @include font ("Roboto, sans-serif", normal, auto, 700);
   }
   
   .roboto-black {
