@@ -1,96 +1,73 @@
 /* pc */
 @media only screen and (min-width: 1200px) {
   .playfair-display-medium {
-    font-family: "Playfair Display", serif;
+    font-family: Playfair Display, serif;
     font-style: normal;
     font-size: 86px;
     font-weight: 500;
     font-optical-sizing: auto;
   }
-
   .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-size: 24px;
+    font-weight: 500;
   }
 }
-
 /* tablet */
 @media only screen and (max-width: 1200px) {
   .playfair-display-medium {
-    font-family: "Playfair Display", serif;
+    font-family: Playfair Display, serif;
     font-style: normal;
     font-size: 72px;
     font-weight: 500;
     font-optical-sizing: auto;
   }
-
   .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-size: 20px;
+    font-weight: 500;
   }
 }
-
 @font-face {
   font-family: "Playfair Display";
-  src: local("Playfair Display"),
-    local("PlayfairDisplay-VariableFont_wght"),
-    url(fonts/playfair-display/PlayfairDisplay-VariableFont_wght.ttf);
+  src: local("Playfair Display"), local("PlayfairDisplay-VariableFont_wght"), url(fonts/playfair-display/PlayfairDisplay-VariableFont_wght.ttf);
 }
-
 @font-face {
   font-family: "Bitter";
-  src: local("Bitter"),
-  local("Bitter-VariableFont_wght"),
-  url(fonts/bitter/Bitter-VariableFont_wght.ttf);
+  src: local("Bitter"), local("Bitter-VariableFont_wght"), url(fonts/bitter/Bitter-VariableFont_wght.ttf);
 }
-
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto"),
-    local("Roboto-Medium"),
-    url(fonts/roboto/Roboto-Medium.ttf);
+  src: local("Roboto"), local("Roboto-Medium"), url(fonts/roboto/Roboto-Medium.ttf);
 }
-
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto"),
-    local("Roboto-Regular"),
-    url(fonts/roboto/Roboto-Regular.ttf);
+  src: local("Roboto"), local("Roboto-Regular"), url(fonts/roboto/Roboto-Regular.ttf);
 }
-
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto"),
-    local("Roboto-Bold"),
-    url(fonts/roboto/Roboto-Bold.ttf);
+  src: local("Roboto"), local("Roboto-Bold"), url(fonts/roboto/Roboto-Bold.ttf);
 }
-
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto"),
-    local("Roboto-Black"),
-    url(fonts/roboto/Roboto-Black.ttf);
+  src: local("Roboto"), local("Roboto-Black"), url(fonts/roboto/Roboto-Black.ttf);
 }
-
 .body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bitter-regular {
-  font-family: "Bitter", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-family: Bitter, serif;
   font-style: normal;
   font-size: 26px;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
-
 .playfair-display-semibold {
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   font-style: normal;
   font-size: 86px;
   font-weight: 600;
@@ -99,28 +76,28 @@
 }
 
 .stretch-120 {
-    font-stretch: 120%;
-  }
-
-
+  font-stretch: 120%;
+}
 
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: Roboto, sans-serif;
   font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: Roboto, sans-serif;
   font-style: normal;
+  font-size: auto;
+  font-weight: 700;
 }
 
 .roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 24px;
+  font-weight: 900;
 }
 
 .fnt-size-64 {
@@ -145,5 +122,4 @@
 
 .fnt-size-16 {
   font-size: 16px;
-}
-
+}/*# sourceMappingURL=fonts.css.map */
