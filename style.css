@@ -299,6 +299,9 @@ label {
 }
 
 input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   height: 42px;
   margin-top: 6px;
   padding: 6px 10px 6px 10px;
@@ -309,43 +312,10 @@ input {
   border-radius: 10px;
 }
 
-.label-name::after {
-  content: "";
-  position: absolute;
-  top: 76%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='26' height='27' viewBox='0 0 26 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.2734 10.3574C16.6897 10.3574 18.6484 8.39867 18.6484 5.98242C18.6484 3.56618 16.6897 1.60742 14.2734 1.60742C11.8572 1.60742 9.89844 3.56618 9.89844 5.98242C9.89844 8.39867 11.8572 10.3574 14.2734 10.3574Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M1.77344 24.7324C1.77344 19.2093 6.81031 14.7324 13.0234 14.7324M18.6484 25.3574L24.8984 19.1074L22.3984 16.6074L16.1484 22.8574V25.3574H18.6484Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
-  background-repeat: no-repeat;
-}
-
-.label-email::after {
-  content: "";
-  position: absolute;
-  top: 72%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='31' height='31' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15.2734 2.91992C12.0411 2.91992 8.94117 4.20396 6.65557 6.48956C4.36997 8.77516 3.08594 11.8751 3.08594 15.1074C3.08594 18.3397 4.36997 21.4397 6.65557 23.7253C8.94117 26.0109 12.0411 27.2949 15.2734 27.2949C17.7941 27.2949 20.4414 26.5355 22.3551 25.2641C22.4576 25.1959 22.5458 25.1082 22.6145 25.0059C22.6831 24.9037 22.731 24.7889 22.7553 24.6682C22.7796 24.5475 22.7799 24.4231 22.7562 24.3023C22.7325 24.1814 22.6852 24.0664 22.617 23.9639C22.5488 23.8613 22.4611 23.7732 22.3589 23.7045C22.2566 23.6358 22.1419 23.588 22.0211 23.5636C21.9004 23.5393 21.7761 23.539 21.6552 23.5627C21.5344 23.5865 21.4194 23.6338 21.3168 23.702C19.7266 24.7613 17.4074 25.4199 15.2734 25.4199C13.2338 25.4199 11.24 24.8151 9.54412 23.682C7.84824 22.5488 6.52646 20.9382 5.74593 19.0538C4.9654 17.1695 4.76118 15.096 5.15909 13.0956C5.557 11.0951 6.53917 9.25761 7.9814 7.81538C9.42363 6.37315 11.2611 5.39098 13.2616 4.99307C15.262 4.59516 17.3355 4.79939 19.2199 5.57991C21.1042 6.36044 22.7148 7.68222 23.848 9.3781C24.9811 11.074 25.5859 13.0678 25.5859 15.1074C25.5859 18.207 24.3109 18.8574 23.2422 18.8574C22.1734 18.8574 20.8984 18.207 20.8984 15.1074V10.4199C20.8984 10.1713 20.7997 9.93282 20.6239 9.75701C20.448 9.58119 20.2096 9.48242 19.9609 9.48242C19.7123 9.48242 19.4738 9.58119 19.298 9.75701C19.1222 9.93282 19.0234 10.1713 19.0234 10.4199V10.9191C18.1821 10.1648 17.1331 9.6814 16.0131 9.5318C14.8931 9.38221 13.754 9.57339 12.7443 10.0804C11.7345 10.5875 10.9008 11.3869 10.3519 12.3746C9.8029 13.3622 9.56413 14.4923 9.66663 15.6176C9.76913 16.7428 10.2082 17.8112 10.9265 18.6834C11.6449 19.5556 12.6093 20.1912 13.6941 20.5075C14.7789 20.8237 15.9337 20.806 17.0083 20.4565C18.0828 20.107 19.0272 19.4419 19.7184 18.548C20.4215 19.9543 21.6344 20.7324 23.2422 20.7324C25.8836 20.7324 27.4609 18.6301 27.4609 15.1074C27.4575 11.8761 26.1724 8.77819 23.8875 6.49333C21.6027 4.20847 18.5047 2.92333 15.2734 2.91992ZM15.2734 18.8574C14.5318 18.8574 13.8067 18.6375 13.19 18.2254C12.5734 17.8134 12.0927 17.2277 11.8089 16.5425C11.5251 15.8573 11.4508 15.1033 11.5955 14.3758C11.7402 13.6484 12.0973 12.9802 12.6218 12.4558C13.1462 11.9313 13.8144 11.5742 14.5418 11.4295C15.2693 11.2848 16.0233 11.359 16.7085 11.6429C17.3937 11.9267 17.9794 12.4073 18.3914 13.024C18.8035 13.6407 19.0234 14.3657 19.0234 15.1074C19.0234 16.102 18.6283 17.0558 17.9251 17.7591C17.2218 18.4623 16.268 18.8574 15.2734 18.8574Z' fill='black'/%3e%3c/svg%3e ");
-  background-repeat: no-repeat;
-}
-
-.label-text::after {
-  content: "";
-  position: absolute;
-  top: 34%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='31' height='31' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M20.2734 5.10742C21.23 5.10737 22.1503 5.47283 22.8463 6.12903C23.5422 6.78522 23.9611 7.68256 24.0172 8.63742L24.0234 8.85742V11.3574C24.98 11.3574 25.9003 11.7228 26.5963 12.379C27.2922 13.0352 27.7111 13.9326 27.7672 14.8874L27.7734 15.1074V20.1074C27.7735 21.0639 27.408 21.9843 26.7518 22.6802C26.0956 23.3762 25.1983 23.7951 24.2434 23.8512L24.0234 23.8574V25.0649C24.0234 26.3399 22.5947 27.0574 21.5809 26.3562L21.4609 26.2662L18.5709 23.8574H14.0234C13.102 23.8588 12.2125 23.5195 11.5259 22.9049L11.3509 22.7374L9.02344 24.4824C8.03469 25.2237 6.64094 24.5762 6.53094 23.3837L6.52344 23.2324V21.3574C5.56692 21.3575 4.64654 20.992 3.95061 20.3358C3.25468 19.6796 2.8358 18.7823 2.77969 17.8274L2.77344 17.6074V8.85742C2.77338 7.90091 3.13884 6.98053 3.79504 6.2846C4.45124 5.58866 5.34857 5.16979 6.30344 5.11367L6.52344 5.10742H20.2734ZM24.0234 13.8574H14.0234C13.6919 13.8574 13.374 13.9891 13.1396 14.2235C12.9051 14.458 12.7734 14.7759 12.7734 15.1074V20.1074C12.7734 20.4389 12.9051 20.7569 13.1396 20.9913C13.374 21.2257 13.6919 21.3574 14.0234 21.3574H18.5709C19.1557 21.3577 19.7218 21.5629 20.1709 21.9374L21.5309 23.0699C21.5716 22.6026 21.7859 22.1675 22.1316 21.8505C22.4774 21.5335 22.9294 21.3575 23.3984 21.3574H24.0234C24.355 21.3574 24.6729 21.2257 24.9073 20.9913C25.1417 20.7569 25.2734 20.4389 25.2734 20.1074V15.1074C25.2734 14.7759 25.1417 14.458 24.9073 14.2235C24.6729 13.9891 24.355 13.8574 24.0234 13.8574ZM20.2734 7.60742H6.52344C6.19192 7.60742 5.87397 7.73912 5.63955 7.97354C5.40513 8.20796 5.27344 8.5259 5.27344 8.85742V17.6074C5.27344 17.9389 5.40513 18.2569 5.63955 18.4913C5.87397 18.7257 6.19192 18.8574 6.52344 18.8574H7.14844C7.64572 18.8574 8.12263 19.055 8.47426 19.4066C8.82589 19.7582 9.02344 20.2351 9.02344 20.7324V21.3574L10.2859 20.4112C10.2777 20.3101 10.2736 20.2088 10.2734 20.1074V15.1074C10.2734 14.1129 10.6685 13.159 11.3718 12.4558C12.075 11.7525 13.0289 11.3574 14.0234 11.3574H21.5234V8.85742C21.5234 8.5259 21.3917 8.20796 21.1573 7.97354C20.9229 7.73912 20.605 7.60742 20.2734 7.60742Z' fill='black'/%3e%3c/svg%3e ");
-  background-repeat: no-repeat;
-}
-
 textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin-top: 6px;
   padding: 6px 10px 6px 10px;
   display: block;
@@ -353,6 +323,73 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 10px;
+}
+
+.modal-form__form__label__div__svg {
+  position: absolute;
+  top: 75%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+.modal-form__form__label__div__svg-textarea {
+  position: absolute;
+  top: 34%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+input:valid {
+  outline: 2px solid green !important;
+}
+
+input:valid + .modal-form__form__label__div__svg path {
+  stroke: green;
+}
+
+input:valid + .modal-form__form__label__div__svg .fill-svg {
+  fill: green;
+}
+
+input:invalid:focus {
+  outline: 2px solid red;
+}
+
+input:invalid:focus + .modal-form__form__label__div__svg path {
+  stroke: red;
+}
+
+input:invalid:focus + .modal-form__form__label__div__svg .fill-svg {
+  fill: red;
+}
+
+textarea:invalid:focus {
+  outline: 2px solid red;
+}
+
+textarea:invalid:focus + .modal-form__form__label__div__svg-textarea path {
+  fill: red;
+  stroke: red;
+}
+
+input:focus-within {
+  outline: 2px solid black;
+}
+
+.modal-form__form__label__div:focus-within path {
+  stroke: black;
+}
+
+.modal-form__form__label__div:focus-within .fill-svg {
+  fill: black;
+}
+
+textarea:focus-within {
+  outline: 2px solid black;
 }
 
 .modal-form__form__div {
@@ -369,6 +406,20 @@ textarea {
   background-color: white;
   text-align: center;
   box-sizing: border-box;
+}
+
+.modal-form__form__div__button:focus {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.12);
+}
+
+.modal-form__form__div__button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.12);
 }
 
 .modal-form__form__div__button-second {
@@ -391,6 +442,28 @@ textarea {
   height: 32px;
   content: "";
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='white'/%3e%3c/svg%3e ");
+}
+
+.modal-form__form__div__button-second:focus {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transform: scale(1.12);
+}
+
+.modal-form__form__div__button-second:focus::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='black'/%3e%3c/svg%3e ");
+}
+
+.modal-form__form__div__button-second:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transform: scale(1.12);
+}
+
+.modal-form__form__div__button-second:hover::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='black'/%3e%3c/svg%3e ");
 }
 
 body:has(dialog[open]) {
