@@ -14,21 +14,24 @@
     <script type="module" src="script.js"></script>
     <script src="https://kit.fontawesome.com/a15e2072e4.js" crossorigin="anonymous"></script>
 </head>
+<body>
     <header class="basic-header">
-        <span class="playfair-display-semibold">Mod</span>
-        <nav>
-            <ul class="roboto-medium nav__ul">
-                <li><a href="#biography">Biography</a></li>
-                <li><a href="#designers"><u>Designers</u></a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#strong-points">Strong points</a></li>
-                <li>
-                    <button class="nav__ul__li__button" type="button" onclick="window.modal_form.showModal();">
-                        <img src="img/form_icon.png">
-                    </button>
-                </li>
-            </ul>
-        </nav>
+        <div class="basic-header__div">
+            <span class="playfair-display-semibold">Mod</span>
+            <nav>
+                <ul class="roboto-medium nav__ul">
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#designers"><u>Designers</u></a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#strong-points">Strong points</a></li>
+                    <li>
+                        <button class="nav__ul__li__button" type="button" onclick="window.modal_form.showModal();">
+                            <img src="img/form_icon.png">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- main -->
@@ -287,16 +290,18 @@
     </header>
 
     <footer>
-        <address class="roboto-regular footer__address">
-            <u><a href="tel:+79211234567">+7 921 123-45-67</a></u><br>
-            <u><a href="mailto:info@modstudio.com">INFO@MODSTUDIO.COM</a></u>
-        </address>
         <div class="footer__div">
-            <span class="roboto-medium fnt-size-18">A product of</span> <b class="roboto-black">MOD</b>
-        </div>
-
-        <div class="roboto-regular footer__div-second">
-            © 2023 Mod Media. All rights reserved
+            <address class="roboto-regular footer__div__address">
+                <u><a href="tel:+79211234567">+7 921 123-45-67</a></u><br>
+                <u><a href="mailto:info@modstudio.com">INFO@MODSTUDIO.COM</a></u>
+            </address>
+            <div class="footer__div__div">
+                <span class="roboto-medium fnt-size-18">A product of</span> <b class="roboto-black">MOD</b>
+            </div>
+    
+            <div class="roboto-regular footer__div__div-second">
+                © 2023 Mod Media. All rights reserved
+            </div>
         </div>
     </footer>
 
