@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a15e2072e4.js" crossorigin="anonymous"></script>
 </head>
     <header class="basic-header">
         <span class="playfair-display-semibold">Mod</span>
@@ -306,24 +307,24 @@
             <p class="roboto-regular fnt-size-18">Do you have any questions? Have something to say?<br>
             Don't be shy, write us:</p>
             
-            <label for="name" class="roboto-medium">
+            <label for="name" class="roboto-medium label-name">
                 Name
                 <input class="roboto-regular" type="text" name="name" placeholder="3+ Characters" required minlength="3">
             </label>
             
-            <label for="email" class="roboto-medium">
+            <label for="email" class="roboto-medium label-email">
                 E-mail
                 <input class="roboto-regular" type="email" name="email" placeholder="name@email.com" required>
             </label>
 
-            <label for="text" class="roboto-medium">
+            <label for="text" class="roboto-medium label-text">
                 Comment
                 <textarea class="roboto-regular" name="text" placeholder="Some text..." rows="6" required></textarea>
             </label>
 
             <div class="modal-form__form__div">
                 <button id="closeButton" class="roboto-medium modal-form__form__div__button" type="button">Cancel</button>
-                <button class="roboto-medium modal-form__form__div__button-second" type="submit"><img src="img/Left Icon.png">Send</button>
+                <button class="roboto-medium modal-form__form__div__button-second" type="submit">Send</button>
             </div>
         </form>
     </dialog>
