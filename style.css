@@ -279,6 +279,18 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#modal_form[open] {
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .modal-form__form {
   display: flex;
   flex-direction: column;
@@ -310,6 +322,7 @@ input {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 10px;
+  transition: outline 0.2s, border 0.2s;
 }
 
 textarea {
@@ -323,6 +336,7 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 10px;
+  transition: outline 0.2s, border 0.2s;
 }
 
 .modal-form__form__label__div__svg {
@@ -343,8 +357,13 @@ textarea {
   height: 30px;
 }
 
+path {
+  transition: stroke 0.2s, fill 0.2s;
+}
+
 input:valid {
   outline: 2px solid green !important;
+  border: transparent;
 }
 
 input:valid + .modal-form__form__label__div__svg path {
@@ -357,6 +376,7 @@ input:valid + .modal-form__form__label__div__svg .fill-svg {
 
 input:invalid:focus {
   outline: 2px solid red;
+  border: transparent;
 }
 
 input:invalid:focus + .modal-form__form__label__div__svg path {
@@ -369,6 +389,7 @@ input:invalid:focus + .modal-form__form__label__div__svg .fill-svg {
 
 textarea:invalid:focus {
   outline: 2px solid red;
+  border: transparent;
 }
 
 textarea:invalid:focus + .modal-form__form__label__div__svg-textarea path {
@@ -378,6 +399,7 @@ textarea:invalid:focus + .modal-form__form__label__div__svg-textarea path {
 
 input:focus-within {
   outline: 2px solid black;
+  border: transparent;
 }
 
 .modal-form__form__label__div:focus-within path {
@@ -390,6 +412,7 @@ input:focus-within {
 
 textarea:focus-within {
   outline: 2px solid black;
+  border: transparent;
 }
 
 .modal-form__form__div {
@@ -406,6 +429,7 @@ textarea:focus-within {
   background-color: white;
   text-align: center;
   box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .modal-form__form__div__button:focus {
@@ -431,39 +455,39 @@ textarea:focus-within {
   border-radius: 10px;
   gap: 5px;
   border: 1px solid black;
-  background-color: black;
-  color: white;
+  background-color: white;
   text-align: center;
   box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .modal-form__form__div__button-second::before {
   width: 32px;
   height: 32px;
   content: "";
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='white'/%3e%3c/svg%3e ");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='black'/%3e%3c/svg%3e ");
 }
 
 .modal-form__form__div__button-second:focus {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border: 1px solid;
   transform: scale(1.12);
 }
 
 .modal-form__form__div__button-second:focus::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='black'/%3e%3c/svg%3e ");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='white'/%3e%3c/svg%3e ");
 }
 
 .modal-form__form__div__button-second:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
   transform: scale(1.12);
 }
 
 .modal-form__form__div__button-second:hover::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='black'/%3e%3c/svg%3e ");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='33' viewBox='0 0 38 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.8645 18.1501H17.9438V26.0708H15.3035V18.1501H7.38281V15.5099H15.3035V7.58914H17.9438V15.5099H25.8645V18.1501Z' fill='white'/%3e%3c/svg%3e ");
 }
 
 body:has(dialog[open]) {
@@ -487,6 +511,10 @@ body:has(dialog[open]) {
   .nav__ul li {
     display: inline-block;
     padding-left: 45px;
+    transition: transform 0.2s;
+  }
+  .nav__ul li:hover {
+    transform: scale(1.12);
   }
   .nav__ul__li__button {
     border: none;
@@ -535,6 +563,10 @@ body:has(dialog[open]) {
     box-sizing: border-box;
     justify-content: space-around;
     padding: 15px;
+    transition: transform 0.2s;
+  }
+  .nav__ul li:hover {
+    transform: scale(1.12);
   }
   .first-section {
     background-position: left;
