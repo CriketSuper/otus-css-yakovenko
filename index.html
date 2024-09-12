@@ -10,8 +10,10 @@
     
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="script.js"></script>
 </head>
-<body>
+<>
     <header class="basic-header">
         <span class="playfair-display-semibold">Mod</span>
         <nav>
@@ -20,6 +22,11 @@
                 <li><a href="#designers"><u>Designers</u></a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#strong-points">Strong points</a></li>
+                <li>
+                    <button class="nav__ul__li__button" type="button" onclick="window.modal_form.showModal();">
+                        <img src="img/form_icon.png">
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -293,5 +300,9 @@
         </div>
     </footer>
 
+    <dialog id="modal_form">
+        <div class="modal-form__div">Я модальное окно</div>
+    </dialog>
+    
 </body>
 </html>

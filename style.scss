@@ -56,7 +56,7 @@ a {
     background-image: url("img/inside-weather.png");
     background-size: cover;
     background-position: center;
-    height: 47vh;
+    height: 92vh;
     position: relative;
     margin-bottom: $section_margin;
 }
@@ -233,6 +233,44 @@ a {
     @include strong-points_scroll_img ('17/20');
 }
 
+#modal_form {
+    justify-content: center;
+    align-items: center;
+    width: 44vh;
+    height: 60vh;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(2deg);
+    transform-origin: center;
+    box-sizing: border-box;
+    overflow: visible;
+    z-index: 0;
+
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+}
+
+.modal-form__div {
+    position: static;
+    transform: rotate(-2deg);
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+body:has(dialog[open]) {
+    overflow: hidden;
+  }
+
 /* pc */
 @media only screen and (min-width: 1201px) {
     
@@ -254,6 +292,10 @@ a {
     .nav__ul li {
         display: inline-block;
         padding-left: 45px;
+    }
+
+    .nav__ul__li__button {
+        border: none;
     }
 
     .first-section-mobile, #biography-mobile, #testimonials-mobile {
