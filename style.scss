@@ -523,9 +523,16 @@ body:has(dialog[open]) {
     }
 
     #designers {
-        
         margin: auto;
         margin-bottom: $section_margin;
+    }
+
+    .designers__h2 {
+        max-width: 1600px;
+        margin: auto;
+        padding: 0 $webpage-padding;
+        margin-bottom: 30px;
+        box-sizing: border-box;
     }
 
     #testimonials {
@@ -541,10 +548,11 @@ body:has(dialog[open]) {
     }
 
     .strong-points__h2 {
-        max-width: 1920px;
+        max-width: 1600px;
         margin: auto;
         padding: 0 $webpage-padding;
         margin-bottom: 30px;
+        box-sizing: border-box;
     }
 
     .strong-points__scroll {
@@ -606,6 +614,48 @@ body:has(dialog[open]) {
 
     .first-section-mobile, #biography-mobile, #testimonials-mobile {
         display: none;
+    }
+
+    #testimonials {
+        @include grid(12, 7.69%, 3, 1fr);
+        overflow: hidden;
+        gap: $element_gap;
+        margin-bottom: $section_margin;
+    }
+    
+    .testimonials__div__link {
+        @include grid_col_row ('1/2', '1/4');
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .testimonials__div__link__p {
+        transform: rotate(-90deg);
+    }
+    
+    .testimonials__img-first {
+        @include grid_col_row ('2/5', '1/4');
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .testimonials__h2 {
+        @include grid_col_row ('5/6', '1/2');
+        transform: rotate(-90deg);
+        margin: auto;
+        padding-bottom: 100px;
+    }
+    
+    .testimonials__div-second {
+        @include grid_col_row ('7/10', '1/4');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 42px;
     }
 }
 
@@ -698,7 +748,7 @@ body:has(dialog[open]) {
     .designers__scroll {
         margin-bottom: $mobile_section_margin;
         padding-left: $mobile_webpage-padding;
-        height: 70vh;
+        height: auto;
     }
 
     .designers__h2 { 
@@ -710,13 +760,10 @@ body:has(dialog[open]) {
     .designers-card-large {
         display: block;
         align-items: start;
-        
-        height: 100%;
-        width: 100%;
     }
 
     .designers-card-large__img {
-        height: 430px;
+        height: 440px;
         width: 336px;
         object-fit: cover;
     }
